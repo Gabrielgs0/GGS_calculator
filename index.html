@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+= Calculadora += <div class="box">
+        <hr></title>
+        <link rel="stylesheet" href="style.css">
+        
+
+</head>
+<body>
+    <audio id="sound" src="click.mp3" autoplay="false"></audio>
+    <div class="box">
+        <h2 class="titulo" style="text-align: center;">Calculadora</h2>
+            <p class="tela"></p>
+            <table>
+                <tr>
+                    <tr>
+                        <td><button class="botao" onclick="limpar() , audio()">C</button></td>
+                        <td><button class="botao" onclick="apagar() , audio()"><</button></td>
+                        <td><button class="botao" onclick="inserir('/') , audio()">/</button></td>
+                        <td><button class="botao" onclick="inserir('*') , audio()">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="inserir('7') , audio()">7</button></td>
+                        <td><button class="botao" onclick="inserir('8') , audio()">8</button></td>
+                        <td><button class="botao" onclick="inserir('9') , audio()">9</button></td>
+                        <td><button class="botao" onclick="inserir('-') , audio()">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="inserir('4') , audio()">4</button></td>
+                        <td><button class="botao" onclick="inserir('5') , audio()">5</button></td>
+                        <td><button class="botao" onclick="inserir('6') , audio()">6</button></td>
+                        <td><button class="botao" onclick="inserir('+') , audio()">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button style="bottom: 82px;" class="botao" onclick="inserir('3') , audio()">3</button></td>
+                        <td><button style="bottom: 82px;" class="botao" onclick="inserir('2') , audio()">2</button></td>
+                        <td><button style="bottom: 82px;" class="botao" onclick="inserir('1') , audio()">1</button></td>
+                        <td howspan="2"><button class="botao" onclick="calculo() , audio()" style="height: 85px;">=</button></td>
+                    </tr>
+                    <td colspan="2"><button style="bottom: 104px; width: 85px " class="botao" onclick="inserir('0') , audio()">0</button></td>
+                    <td><button style="bottom: 104px;" class="botao" onclick="inserir('.') , audio()">.</button></td>
+                </tr>
+            </table>
+    </div>
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
