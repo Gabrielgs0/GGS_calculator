@@ -37,5 +37,5 @@
     background-color: rgb(151, 60, 0);
 }
 body{
-    background-color: blue;
+    background: linear-gradient(blue,green);
 }
